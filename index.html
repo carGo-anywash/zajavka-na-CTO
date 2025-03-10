@@ -99,7 +99,7 @@
         <div class="alert" id="success-message">Данные успешно отправлены! Мы скоро с вами свяжемся для согласования визита на СТО</div>
         <div class="alert error" id="error-message">Произошла ошибка при отправке данных, попробуйте еще раз!</div>
 
-        <form id="sto-form">
+        <form id="zajavka-na-CTO">
             <label for="date_request">Дата заявки</label>
             <input type="date" id="date_request" name="request_date">
 
@@ -141,7 +141,7 @@
     </div>
 
     <script>
-        document.querySelector("#sto-form").addEventListener("submit", function (event) {
+        document.querySelector("#zajavka-na-CTO").addEventListener("submit", function (event) {
             event.preventDefault();
 
             let formData = {
